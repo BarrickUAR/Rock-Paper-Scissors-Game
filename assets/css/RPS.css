@@ -142,7 +142,6 @@ body {
   line-height: 19.2px;
   letter-spacing: 2.5px;
   text-align: left;
-
   color: #3B4262;
   border: 1px solid #ffff;
   background-color: #F3F3F3;
@@ -178,9 +177,7 @@ body {
 
 
   .container {
-    width: 376px;
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -256,12 +253,6 @@ body {
     background-color: transparent;
   }
 
-  .gamepick .gameResult {
-
-    color: red;
-
-  }
-
   .rulesbutton button {
     position: relative;
     cursor: pointer;
@@ -292,6 +283,11 @@ body {
     margin-top: 150px;
   }
 
+  .game-pick {
+    display: none;
+    gap: 10px;
+  }
+
   .winscreen h2 {
     font-size: 40px;
     color: white;
@@ -299,34 +295,29 @@ body {
     margin-bottom: 20px;
   }
 
-  .playagain {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 13.2px;
-    letter-spacing: 2.5px;
+  .game-pick h1 {
     text-align: center;
-
-    color: #3B4262;
-    border: 1px solid #ffff;
-    background-color: #F3F3F3;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 15px 60px;
-
   }
-
 
   .game-pick p {
-    width: 120px;
-    border-radius: 50%;
+    padding-left: 0px;
+    width: 0px;
+    border-radius: none;
     background-color: #0000001A;
+  }
+
+  .game-pick img {
+    width: 100px;
+    padding-left: 25px;
 
   }
 
-  .winscreen p {
-    width: 120px;
-    border-radius: 50%;
-    background-color: #0000001A;
-
+  #gameResult {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 50px;
   }
+
+
+
 }
