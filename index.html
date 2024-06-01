@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taş Kağıt Makas</title>
+    <link rel="stylesheet" href="assets/css/RPS.css" />
+    <script src="assets/js/RPS.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Scoreboard Container Start -->
+      <div class="scoreboard-container">
+
+        <div class="scoreboard-text">
+          <h2>
+            ROCK<br />
+            PAPER <br />
+            SCISSORS
+          </h2>
+        </div>
+
+        <div class="scoreboard">
+          <p>SCORE</p>
+          <h3>0</h3>
+        </div>
+        <!-- Scozreboard Container End -->
+      </div>
+
+      <div class="game">
+        <div class="gamebuttons">
+
+          <div class="gamebuttons-item">
+            
+            <button class="paper">
+              <img src="assets/img/paper.svg" alt="paper" />
+            </button>
+
+            <button class="scissors">
+            <img src="assets/img/scissors.svg" alt="scissors"/>
+            </button>
+
+          </div>
+          <div class="rockdiv">
+            <button class="rock">
+              <img src="assets/img/rock.svg" alt="rock" />
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="game-pick">
+        <div class="you-picked">
+          <h1>YOU PICKED</h1>
+          <p><span id="playerChoice" ></span></p>
+        </div>
+
+        <div class="winscreen">
+          <h2 id="gameResult" >YOU WIN</h2>
+          <a class="playagain" href="index.html">PLAY AGAIN</a>
+        </div>
+
+        <div class="house-picked">
+          <h1>THE HOUSE PICKED</h1>
+          <p><span id="cpuChoice" ></span></p>
+        </div>
+      </div>
+      <!-- Rules Start -->
+
+      <div class="rulesbutton">
+        <button>Rules</button>
+      </div>
+
+      <!-- Rules End -->
+
+      <!-- Container End -->
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Barlow Semi Condensed;
+  background-color: #1F3757;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.scoreboard-container {
+  margin-bottom: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 700px;
+  margin-top: 50px;
+}
+
+.scoreboard-text {
+  color: white;
+}
+
+.scoreboard {
+  background-color: white;
+  border: 1px solid #fff;
+  text-align: center;
+  width: 150px;
+  padding: 16px;
+  max-height: 114px;
+  border-radius: 10px;
+}
+
+.scoreboard p {
+  color: blue;
+}
+
+.scoreboard h3 {
+  font-size: 50px;
+  color: grey;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game.hidden{
+  display: none;
+}
+
+.rockdiv {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+
+.gamebuttons-item {
+  border: none;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.gamebuttons button{
+  border: none;
+  background-color: transparent;
+}
+
+.gamebuttons img {
+  transition: transform 0.3s;
+}
+
+.gamebuttons button:hover {
+  transform: scale(1.1);
+}
+
+.gamebuttons button:hover img {
+  transform: scale(1.1);
+}
+
+.rulesbutton button {
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ffff;
+  background-color: transparent;
+  color: #fff;
+  bottom: -10px;
+  right: -300px;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+
+.game-pick {
+  display: none;
+  gap: 100px;
+}
+
+.game-pick.active{
+  display: flex;
+}
+
+.game-pick h1 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.winscreen {
+  margin-top: 150px;
+}
+
+.winscreen h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.playagain {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  text-align: left;
+
+  color: #3B4262;
+  border: 1px solid #ffff;
+  background-color: #F3F3F3;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 15px 60px;
+
+}
+
+.playagain:hover {
+  background-color: #3B4262;
+  color: #F3F3F3;
+}
+
+.game-pick p {
+  width: 224px;
+  height: 224px;
+  border-radius: 50%;
+  background-color: #0000001A;
+
+}
+
+.winscreen p {
+  width: 224px;
+  height: 224px;
+  border-radius: 50%;
+  background-color: #0000001A;
+
+}
+
+@media (width <= 376px) {
+
+
+
+  .container {
+    width: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scoreboard-container {
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    padding: 20px;
+    width: 311px;
+    margin-top: 50px;
+  }
+  
+  .scoreboard-text {
+    color: white;
+  }
+  
+  .scoreboard {
+    background-color: white;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 100px;
+    padding: 16px;
+    border-radius: 10px;
+  }
+  
+  .scoreboard p {
+    color: blue;
+  }
+  
+  .scoreboard h3 {
+    font-size: 30px;
+    color: grey;
+  }
+  
+  .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game.hidden{
+    display: none;
+  }
+  
+  .rockdiv {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  
+  .gamebuttons-item {
+    border: none;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gamebuttons img {
+    width: 130px;
+  }
+  
+  .gamebuttons button{
+    border: none;
+    background-color: transparent;
+  }
+  
+  
+  .rulesbutton button {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ffff;
+    background-color: transparent;
+    color: #fff;
+    bottom: -50px;
+    right: -120px;
+    padding: 10px 30px;
+    border-radius: 8px;
+  }
+  
+  
+  .game-pick {
+    display: none;
+    gap: 100px;
+  }
+  
+  .game-pick.active{
+    display: flex;
+  }
+  
+  .game-pick h1 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .winscreen {
+    margin-top: 150px;
+  }
+  
+  .winscreen h2 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .playagain {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 2.5px;
+    text-align: left;
+  
+    color: #3B4262;
+    border: 1px solid #ffff;
+    background-color: #F3F3F3;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 60px;
+  
+  }
+  
+  
+  .game-pick p {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    background-color: #0000001A;
+  
+  }
+  
+  .winscreen p {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    background-color: #0000001A;
+  
+  }
+}
