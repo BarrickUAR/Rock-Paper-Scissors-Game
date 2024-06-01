@@ -61,7 +61,7 @@ body {
   align-items: center;
 }
 
-.game.hidden{
+.game.hidden {
   display: none;
 }
 
@@ -79,7 +79,7 @@ body {
   justify-content: center;
 }
 
-.gamebuttons button{
+.gamebuttons button {
   border: none;
   background-color: transparent;
 }
@@ -114,7 +114,7 @@ body {
   gap: 100px;
 }
 
-.game-pick.active{
+.game-pick.active {
   display: flex;
 }
 
@@ -173,7 +173,7 @@ body {
 
 }
 
-@media (width <= 376px) {
+@media (width <=376px) {
 
 
 
@@ -183,7 +183,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .scoreboard-container {
     margin-bottom: 10%;
     display: flex;
@@ -195,11 +195,15 @@ body {
     width: 311px;
     margin-top: 50px;
   }
-  
+
+  /* .you-picked, .house-picked {
+    display: none;
+  } */
+
   .scoreboard-text {
     color: white;
   }
-  
+
   .scoreboard {
     background-color: white;
     border: 1px solid #fff;
@@ -208,33 +212,34 @@ body {
     padding: 16px;
     border-radius: 10px;
   }
-  
+
   .scoreboard p {
     color: blue;
   }
-  
+
   .scoreboard h3 {
     font-size: 30px;
     color: grey;
   }
-  
+
   .game {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .game.hidden{
+
+  .game.hidden {
     display: none;
   }
-  
+
+
   .rockdiv {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
-  
-  
+
+
   .gamebuttons-item {
     border: none;
     gap: 20px;
@@ -245,13 +250,18 @@ body {
   .gamebuttons img {
     width: 130px;
   }
-  
-  .gamebuttons button{
+
+  .gamebuttons button {
     border: none;
     background-color: transparent;
   }
-  
-  
+
+  .gamepick .gameResult {
+
+    color: red;
+
+  }
+
   .rulesbutton button {
     position: relative;
     cursor: pointer;
@@ -263,65 +273,60 @@ body {
     padding: 10px 30px;
     border-radius: 8px;
   }
-  
-  
-  .game-pick {
-    display: none;
-    gap: 100px;
-  }
-  
-  .game-pick.active{
+
+
+
+
+  .game-pick.active {
     display: flex;
   }
-  
+
   .game-pick h1 {
     font-size: 20px;
     color: white;
     text-align: center;
     margin-bottom: 60px;
   }
-  
+
   .winscreen {
     margin-top: 150px;
   }
-  
+
   .winscreen h2 {
     font-size: 40px;
     color: white;
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .playagain {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.2px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 13.2px;
     letter-spacing: 2.5px;
-    text-align: left;
-  
+    text-align: center;
+
     color: #3B4262;
     border: 1px solid #ffff;
     background-color: #F3F3F3;
     text-decoration: none;
     border-radius: 10px;
     padding: 15px 60px;
-  
+
   }
-  
-  
+
+
   .game-pick p {
-    width: 224px;
-    height: 224px;
+    width: 120px;
     border-radius: 50%;
     background-color: #0000001A;
-  
+
   }
-  
+
   .winscreen p {
-    width: 224px;
-    height: 224px;
+    width: 120px;
     border-radius: 50%;
     background-color: #0000001A;
-  
+
   }
 }
