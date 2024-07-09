@@ -102,7 +102,7 @@ body {
   border: 1px solid #ffff;
   background-color: transparent;
   color: #fff;
-  bottom: -10px;
+  bottom: -50px;
   right: -300px;
   padding: 10px 30px;
   border-radius: 8px;
@@ -172,6 +172,60 @@ body {
 
 }
 
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px; /* Maximum width */
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal img {
+  width: 300px;
+  height: 600px;
+}
+
+
 @media (width <=376px) {
 
 
@@ -192,10 +246,6 @@ body {
     width: 311px;
     margin-top: 50px;
   }
-
-  /* .you-picked, .house-picked {
-    display: none;
-  } */
 
   .scoreboard-text {
     color: white;
@@ -259,7 +309,7 @@ body {
     border: 1px solid #ffff;
     background-color: transparent;
     color: #fff;
-    bottom: -50px;
+    bottom: -20px;
     right: -120px;
     padding: 10px 30px;
     border-radius: 8px;
@@ -318,6 +368,9 @@ body {
     padding-left: 50px;
   }
 
-
+  .modal img {
+    width: 200px;
+    height: 400px;
+  }
 
 }
